@@ -7,7 +7,20 @@
     <title>Document</title>
   </head>
   <body>
-    <form action="/" method="post"></form>
+    <form action="/" method="post">
+      <div>
+        <label for="name">First name</label>
+        <!-- to associate a label to an input element we need to use the for attribute on the label tag, the value of the for attribute is the id of the input element -->
+        <!-- a label element is used to display a textual caption for a form element, not only it associates visually with the controled element, but also programmatically, this means it can also be used to activate the controlled element, screen readers also use the label element-->
+        <input id="name" type="text" />
+        <!-- this is an input tag, this is used so that the user inputs a text -->
+        <!-- the type attribute is used in the <input> element to specify the type of input to display. -->
+      </div>
+      <div>
+        <label for="last_name">Last name</label>
+        <input id="last_name" type="text" />
+      </div>
+    </form>
     <!-- for the action atrubute, a url should be passed where the data should be sent -->
     <!-- the method attribute can take 3 arguments post, get, and dialog  -->
     <!-- The <form> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc. -->
