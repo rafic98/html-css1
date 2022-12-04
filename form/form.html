@@ -9,7 +9,7 @@
   <body>
     <form action="/" method="post">
       <div>
-        <label for="name">First name</label>
+        <label name="name" for="name">First name</label>
         <!-- to associate a label to an input element we need to use the for attribute on the label tag, the value of the for attribute is the id of the input element -->
         <!-- a label element is used to display a textual caption for a form element, not only it associates visually with the controled element, but also programmatically, this means it can also be used to activate the controlled element, screen readers also use the label element-->
         <input id="name" type="text" />
@@ -18,7 +18,46 @@
       </div>
       <div>
         <label for="last_name">Last name</label>
-        <input id="last_name" type="text" />
+        <input name="lastname" id="last_name" type="text" />
+        <!-- The name attribute is used to reference elements in a JavaScript, or to reference form data after a form is submitted. -->
+      </div>
+      <div>
+        <label for="number">age</label>
+        <input type="number" name="age" id="age" min="4" max="170" />
+        <!-- the min and max attributes are used to create an upper and lower limit for input -->
+      </div>
+      <div>
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date" />
+      </div>
+      <div>
+        <label for="month">month</label>
+        <input type="month" name="month" id="month" />
+      </div>
+      <div>
+        <label for="week">week</label>
+        <input type="week" name="week" id="week" />
+      </div>
+      <div>
+        <label>Select your favorite fruit</label>
+        <br />
+        <input type="radio" name="mango" id="mango" /> Mango
+        <br />
+        <input type="radio" name="banana" id="banana" /> banana
+        <br />
+        <input type="radio" name="pear" id="pear" />pear
+        <!-- radio buttons are used so that users can select one option -->
+        <br />
+        <!-- to make sure that the user can select one of the options, make sure that the value og the name atribute of the radio button is the same, look bellow -->
+        <label>Select your favorite fruit</label>
+        <br />
+        <input type="radio" name="fruit" id="mango" /> Mango
+        <br />
+        <input type="radio" name="fruit" id="banana" /> banana
+        <br />
+        <input type="radio" name="fruit" id="pear" />
+        pear
+        <br />
       </div>
     </form>
     <!-- for the action atrubute, a url should be passed where the data should be sent -->
