@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data lists and contact form</title>
+  </head>
+  <body>
+    <!-- An html data list allow you to define options that user can choose from as the user types into the text input field, similar to select element except allows user to type in and select -->
+
+    <!--to create a data list, you have to creat input element with an atribute called list and use data list tag with a unique id to associate the data list with the input  check the example bellow-->
+    <label for="brand">Choose a Brand</label>
+    <input type="text" name="brand" id="brand" list="brands" />
+    <datalist id="brands">
+      <option value="Reebok"></option>
+      <option value="Adidas"></option>
+      <option value="Nike"></option>
+      <option value="Skechers"></option>
+      <option value="Air Jordan"></option>
+      <!-- note that option tags can be self closing -->
+    </datalist>
+  </body>
+</html>
