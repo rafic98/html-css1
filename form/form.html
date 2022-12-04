@@ -76,6 +76,40 @@
         <input type="color" name="color" id="color" />
         <!-- the color attribute lets user pick a color -->
       </div>
+      <div>
+        <!-- value attribute in input fields -->
+        <label for="textbox_withvalue">textbox_withvalue</label>
+        <input
+          type="text"
+          name="textbox_withvalue"
+          id="textbox_withvalue"
+          value="This input field will be prefilled with what is written in the value attribute"
+        />
+      </div>
+      <div>
+        <!-- value attribute works differently with radio buttons and checkboxes the attribute in this case is checked -->
+        <label>radio button example with value attribute</label>
+        <br />
+        <input type="radio" name="rand" id="rand" checked />example1
+        <br />
+        <input type="radio" name="rand" id="rand1" />example2 <br />
+      </div>
+      <div>
+        <label>checkbox example</label>
+        <br />
+        <input type="checkbox" name="randcheck" id="randcheck1" />example1
+        <br />
+        <input
+          type="checkbox"
+          name="randchek1"
+          id="randcheck1"
+          checked
+        />example2
+      </div>
+      <div>
+        <input type="color" name="colorpre" id="" value="blue" />
+        <!-- we can also put a value to the colors -->
+      </div>
     </form>
     <!-- for the action atrubute, a url should be passed where the data should be sent -->
     <!-- the method attribute can take 3 arguments post, get, and dialog  -->
