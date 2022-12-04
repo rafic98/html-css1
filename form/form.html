@@ -110,6 +110,54 @@
         <input type="color" name="colorpre" id="" value="blue" />
         <!-- we can also put a value to the colors -->
       </div>
+
+      <div>
+        <!-- select element is used tocreate a drop down list of options in the form that the user can choose from -->
+        <!-- each option is defined using an option tag -->
+        <label for="horses">I like</label>
+        <select name="horses" id="horses">
+          <option value="coolhorse">cool horses</option>
+          <option value="funnyhorse" selected>funnyhorse</option>
+          <!-- you can use the selected attribute so that the second option will be displayed contrary to the default which will display the first option -->
+        </select>
+      </div>
+      <label for="aboutme">About me</label>
+      <textarea
+        name="aboutme"
+        id="aboutme"
+        cols="30"
+        rows="10"
+        style="vertical-align: top"
+        placeholder="I am a placeholder"
+      ></textarea>
+      <!-- the top vertical align will push the label to be near the top of the text area, on the left -->
+      <!-- the text area element is used for user to input text that may span multiple lines -->
+      <!-- the rows and cols attribute specify the initial size of the text area, of course the minlenght and maxlength attriute will limit the length of the text in the text area -->
+      <!-- the place holder is a text that will apear in the text area but disapear when we type something -->
+      <div>
+        <label for="textarea1">example of disabled text area</label>
+        <textarea
+          name="textarea1"
+          id="textarea1"
+          cols="30"
+          rows="10"
+          style="vertical-align: top"
+          disabled
+        ></textarea>
+      </div>
+      <div>
+        <label for="textarea2">example of readonly text area</label>
+        <textarea
+          name="textarea2"
+          id="textarea2"
+          cols="30"
+          rows="10"
+          style="vertical-align: top"
+          readonly
+        >
+If i write something here, the text area will be filled with this text</textarea
+        >
+      </div>
     </form>
     <!-- for the action atrubute, a url should be passed where the data should be sent -->
     <!-- the method attribute can take 3 arguments post, get, and dialog  -->
