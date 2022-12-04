@@ -61,7 +61,7 @@
       <!-- the figure element is made to contain imgs -->
     </aside>
 
-    <video style="width: 100%; height: 50.5rem" autoplay controls loop>
+    <video style="width: 100%; height: 50.5rem" controls loop>
       <!-- attributes such as controls, loops, autoplay can be used to control the player behavior -->
       <source
         src="/videos/mixkit-man-dancing-under-changing-lights-1240-medium.mp4"
@@ -69,8 +69,15 @@
       />
       <!-- the source element is used to define different video sources, it is recommended to only use mp4 formats -->
       <!-- note that multiple sources can be used in case the browser does not recognise ththe first video source, it will move to the next one -->
+      the text added here will be displayed in case video is not loaded on
+      user's browser
     </video>
     <!-- the video tag is used to dislplay videos -->
+
+    <audio controls loop>
+      <source src="/audio/sound.mp3" type="audio/mp3" />
+    </audio>
+    <!-- the audio tag is used to read audio files -->
 
     <footer style="text-align: center; clear: both">
       <!--the clear both is so that the footer would be under bot float elements and not only under the aside, remove it to see effect.
