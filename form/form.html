@@ -107,8 +107,8 @@
         />example2
       </div>
       <div>
-        <input type="color" name="colorpre" id="" value="blue" />
-        <!-- we can also put a value to the colors -->
+        <input type="color" name="colorpre" id="" value="#00ff00" />
+        <!-- we can also put a value to the colors (hex code or rgb)-->
       </div>
 
       <div>
@@ -163,5 +163,59 @@ If i write something here, the text area will be filled with this text</textarea
     <!-- the method attribute can take 3 arguments post, get, and dialog  -->
     <!-- The <form> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc. -->
     <!-- Forms are used to collect the required information in a logical, meaningful fashion for communication and pass to another entity.  -->
+
+    <form action="get">
+      <!-- buttons -->
+
+      <!-- a button element is used to create a clickable button on the page, or in a form that performs a certain action:eg submit button to submit a form -->
+
+      <!--the type attribute in a button allows you to select if a button is a normal bitton, a submit button, or a reset button  -->
+
+      <!-- the text between button tags is used to label the button -->
+
+      <!-- there is a difference between elements and input=button // 
+    using button tags offer greater flexibility, if you want a button with an image, you should use a button tag-->
+
+      <div>
+        <label for="email">email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="password">password</label>
+        <input type="password" name="password" id="password" />
+        <!-- password input type hides the input -->
+      </div>
+      <div>
+        <button type="submit">submit</button>
+        <!-- this can be done with an input type button -->
+        <!-- <input type="button" value="submit" /> -->
+        <!-- in the case of input= button the only way to label the button is by using value attribute -->
+
+        <button type="reset">
+          <img
+            src="https://unsplash.it/16/16"
+            alt="this will display a random image, when clicked the form data will be reset"
+          />
+          reset
+        </button>
+        <button type="button">clickme</button>
+        <!-- this button type can be told what to do using js -->
+        <button
+          type="button"
+          style="
+            background-color: gold;
+            color: white;
+            font-size: 24px;
+            padding: 2px;
+            border: 5px solid black;
+          "
+        >
+          this is a styled button
+        </button>
+        <!-- padding adds space between the content and boundries of the box containing the content  -->
+        <!-- border property adds a border  -->
+      </div>
+    </form>
+    <!-- this form is set to get so that we wont get an error when we click the submit button -->
   </body>
 </html>
